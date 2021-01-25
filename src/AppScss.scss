@@ -1,0 +1,191 @@
+.App{
+    .shoppingSite{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -16px;
+        position: fixed;
+        width: 100%;
+        height: 90px;
+        background-color: pink;
+        font-size: 52px;
+        font-weight: 700;
+        font-style: italic;
+        z-index: 60;
+        .headerTitle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cartImage{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 14px;
+            >img{
+                width: 97px;
+                height: 70px;
+            }
+
+        }
+    }
+    .productList{
+        position: relative;
+        top: 89px;
+        height: 90vh; 
+        display: flex;
+        justify-content: center;
+        .unorderedList{
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            margin: 0 -10px 0 3px;
+            width: 73%;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: start;
+            height: 80vh;
+            overflow: scroll;
+            .listItem{
+                margin: 20px;
+                .card{
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    transition: 0.3s;
+                    width: 225px;
+                    height: 421px;
+                        &:hover{
+                            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+                        }
+                    >img{
+
+                    }
+                    .container{
+                        padding: 2px 16px;
+                        >p{
+                            overflow: scroll;
+                            text-overflow: ellipsis;
+                            height: 52px;
+                        }
+                    }
+                    .cartButton{
+                        background-color: lightpink;
+                        >button{
+                            outline: none;
+                            border: none;
+                            background: transparent;
+                            width: 100%;
+                            margin-bottom: 3px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+        height: 93px;
+        background-color: pink;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: italic;  
+        margin-top: 38px; 
+    }
+    .dialog{
+        position: absolute;
+        top: 93px;
+        .dialogBox{
+            height: 80vh;
+            width: 30vh;
+            overflow: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .dialog-header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 88%;
+                background: pink;
+                height: 32px;
+                padding: 8px;
+                .cartTitle{
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .close{
+                    cursor: pointer;
+                }
+            }
+            .dialog-items{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -18px;
+                overflow-x: hidden;
+                margin-top: 30px;
+                .catItemList{
+                    list-style: none;
+                    margin-top: 199px;
+                    .listItem{
+                        margin: 20px;
+                        .card{
+                            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                            transition: 0.3s;
+                            width: 225px;
+                            height: 421px;
+                                &:hover{
+                                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+                                }
+                            >img{
+        
+                            }
+                            .container{
+                                padding: 2px 16px;
+                                >p{
+                                    overflow: scroll;
+                                    text-overflow: ellipsis;
+                                    height: 52px;
+                                }
+                            }
+                            .cartButton{
+                                background-color: lightpink;
+                                >button{
+                                    outline: none;
+                                    border: none;
+                                    background: transparent;
+                                    width: 100%;
+                                    margin-bottom: 3px;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
